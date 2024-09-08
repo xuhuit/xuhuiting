@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简单网页示例</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="content">
+  <h1>欢迎来到我的网页</h1>
+  <img src="1.jpg" alt="示例图片">
+  <button onclick="changeImage()">更换图片</button>
+</div>
+
+<script>
+  function changeImage() {
+    var img = document.querySelector('img');
+    img.src = '2.jpg'; // 替换为另一张图片的路径
+  }
+</script>
+</body>
+</html>
